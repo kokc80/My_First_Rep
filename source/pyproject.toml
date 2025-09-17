@@ -1,0 +1,20 @@
+[project]
+name = "cd -"
+version = "poetry init"
+description = "Работа с Git"
+authors = [
+    {name = "Kokc80",email = "kokc@inbox.ru"}
+]
+license = {text = "none"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "cd "}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
