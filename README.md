@@ -8,11 +8,32 @@
 
 1. Клонируйте репозиторий:
 git clone https://github.com/kokc80/My_First_Rep
-2. для проверки используйте конфигурационные файлы .mypy.ini и .flake8
+2. Установите зависимости
+poetry install
+
 
 ## Использование:
 используется для проверки/закрепления материала пройденного на уроке 10.1 
 ## Документация:
-не совсем понятно какая тут может быть документация, вроде все описано в docstring
+[project]
+name = "cd MyGit"
+version = "poetry init"
+description = "Работа с Git"
+authors = [
+    {name = "Kokc80",email = "kokc@inbox.ru"}
+]
+license = {text = "none"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "cd "}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
 ## Лицензия:
-насколько я понимаю на данном этапе нет необъходимости в лицензии
+насколько я понимаю на данном этапе нет необходимости в лицензии

@@ -1,5 +1,5 @@
 [project]
-name = "cd -"
+name = "cd MyGit"
 version = "poetry init"
 description = "Работа с Git"
 authors = [
