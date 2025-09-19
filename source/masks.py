@@ -1,3 +1,6 @@
+from os.path import split
+
+
 def get_mask_card_number(card_num: str) -> str:
     """
     Функция принимает на вход номер карты и возвращает ее маску.
@@ -20,6 +23,7 @@ def get_mask_card_number(card_num: str) -> str:
             new_card_num = new_card_num + card_num[i]
         if (i + 1) % 4 == 0:
             new_card_num = new_card_num + " "
+    new_card_num = new_card_num.strip()
     return new_card_num
 
 
