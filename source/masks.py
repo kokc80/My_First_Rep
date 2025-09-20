@@ -37,5 +37,8 @@ def get_mask_account(invoice_num: str) -> str:
     **4305  # выход функции
     """
     new_invoice_num: str = ""
-    new_invoice_num = "**" + invoice_num[-4:]
+    if invoice_num == "":
+        new_invoice_num = ""
+    else:
+      new_invoice_num = "**" + invoice_num[-4:]
     return new_invoice_num.strip()
