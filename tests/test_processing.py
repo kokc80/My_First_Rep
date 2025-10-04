@@ -1,5 +1,6 @@
-from source.processing import *
 import pytest
+
+from source.processing import *
 
 list_unsorted: List = [
     {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},

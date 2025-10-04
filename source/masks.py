@@ -1,4 +1,3 @@
-from os.path import split
 
 
 def get_mask_card_number(card_num: str) -> str:
@@ -40,5 +39,5 @@ def get_mask_account(invoice_num: str) -> str:
     if invoice_num == "":
         new_invoice_num = ""
     else:
-      new_invoice_num = "**" + invoice_num[-4:]
+        new_invoice_num = "**" + invoice_num[-4:]
     return new_invoice_num.strip()
