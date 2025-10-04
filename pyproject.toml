@@ -44,4 +44,5 @@ exclude = '''
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.2"
+pytest-cov = "^7.0.0"
 
