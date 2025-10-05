@@ -15,4 +15,3 @@ def sort_by_date(data_list: List, reverse1: bool = True) -> List:
     должна возвращать новый список, отсортированный по дате (date)"""
     list_sorted: List = sorted(data_list, key=lambda x: x.get("date"), reverse=reverse1)
     return list_sorted
-
