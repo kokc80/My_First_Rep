@@ -16,3 +16,5 @@ def sort_by_date(data_list: List, reverse: bool = True) -> List:
     )"""
     list_sorted: List = sorted(data_list, key=lambda x: x.get("date"), reverse=True)
     return list_sorted
+
+
