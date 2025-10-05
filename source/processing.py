@@ -9,12 +9,10 @@ def filter_by_state(banking_operations: List[Dict[str, str]], state: str = "EXEC
     return filtered_list
 
 
-def sort_by_date(data_list: List, reverse: bool = True) -> List:
+def sort_by_date(data_list: List, reverse1: bool = True) -> List:
     """Функия принимает список словарей и необязательный параметр,
     задающий порядок сортировки (по умолчанию — убывание). Функция
-    должна возвращать новый список, отсортированный по дате (date)
-    )"""
-    list_sorted: List = sorted(data_list, key=lambda x: x.get("date"), reverse=True)
+    должна возвращать новый список, отсортированный по дате (date)"""
+    list_sorted: List = sorted(data_list, key=lambda x: x.get("date"), reverse=reverse1)
     return list_sorted
-
 
